@@ -1,0 +1,89 @@
+entities:
+  - brand
+  - price
+  - unit
+  - category
+  - tel_name
+  - addition
+  - weekday
+  - weekend
+
+slots:
+  brand:
+    type: text
+  category:
+    type: text
+  unit:
+    type: text
+  price:
+    type: text
+  tel_name:
+    type: text
+  addition:
+    type: text
+  weekday:
+    type: text
+  weekend:
+    type: text
+
+intents:
+  - greet
+  - bye
+  - thank
+  - ask_by_price
+  - ask_info
+  - ask_time
+  - bot_challenge
+  - react_negative
+  - react_positive
+  - location
+  - policy
+
+responses:
+  utter_thank:
+    - text: I'm happy to help.
+    - text: No worries!
+    - text: You're welcome!
+
+  utter_greet:
+    - text: 🤖 Hi, my name is Duck
+    - text: Hi there, can i help you?
+    - text: 🤖 Hello, i'am Duck. How can i help you?
+  utter_bye:
+    - text: Bye!
+    - text: See you again!
+  utter_react_positive:
+    - text: :)
+    - text: 😄
+    - text: 😊
+    - text: 👏
+    - text: 😍
+  utter_react_negative:
+    - text: :(
+    - text: 😕
+    - text: 😞
+    - text: 😥
+    - text: 😢
+  utter_iamabot:
+    - text: Yes, I'm a bot :3
+  utter_ask_time:
+    - text: our stores is open from 7 AM to 10 PM every weekday
+  utter_location:
+    - text: Our store located at 1st Dai Co Viet street, Ha noi, Viet nam.
+  utter_moredetail:
+    - text: Alternatively, you can call [123-456-789] for more details
+actions:
+  - utter_greet
+  - utter_thank
+  - utter_bye
+  - utter_ask_time
+  - utter_iamabot
+  - utter_react_positive
+  - utter_react_negative
+  - utter_location
+  - utter_moredetail
+  - rep_policy
+  - action_ask_info
+  - action_ask_time
+  - action_ask_by_price
+
